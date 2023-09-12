@@ -36,25 +36,37 @@ function createSketchFeature() {
         elem.addEventListener('mouseover', () => {
             elem.style.backgroundColor = `darkgrey`;
         });
-        elem.addEventListener('mouseout', () => {
-            setTimeout(function() {
-                elem.style.backgroundColor = '';
-            }, 500)
-        });
     };
 }
 
 
-// Testing out random rgb colors
-// elem.style.backgroundColor = 'darkgrey';
+
+
 
 /* Challenge 1: Random RGB Colors:
 To createSketchFeature function: Add the following to the Mouseover function
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     elem.style.backgroundColor = `#${randomColor}`;
+in place of elem.style.backgroundColor = 'darkgrey';
+*/
+
+/* Challenge 2: Progressive Darkening Effect
+-- Completely black square should come after 10 interactions
+
+
 
 */
 
+
+/* Originally had the trail leave, here is the code for that - added to createSketchFeature function
+    //        elem.addEventListener('mouseout', () => {
+  //          setTimeout(function() {
+    //            elem.style.backgroundColor = '';
+      //      }, 500)
+        //});
+
+
+*/
 
 
 
