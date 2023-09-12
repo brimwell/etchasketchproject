@@ -27,8 +27,6 @@ function createSquares(numberOfSquares, param) {
     };
 }
 
-
-
 function createSketchFeature() {
     const newGrid = document.querySelectorAll('.grid');
     for (j = 0; j < newGrid.length; j++) {
