@@ -27,14 +27,14 @@ function createSquares(numberOfSquares, param) {
     };
 }
 
+
+
 function createSketchFeature() {
     const newGrid = document.querySelectorAll('.grid');
     for (j = 0; j < newGrid.length; j++) {
         let elem = newGrid[j];
-        // elem.style.width = `${param}px`;
-        // elem.style.height = `${param}px`;
         elem.addEventListener('mouseover', () => {
-            elem.style.backgroundColor = 'darkgrey';
+            elem.style.backgroundColor = `darkgrey`;
         });
         elem.addEventListener('mouseout', () => {
             setTimeout(function() {
@@ -43,6 +43,18 @@ function createSketchFeature() {
         });
     };
 }
+
+
+// Testing out random rgb colors
+// elem.style.backgroundColor = 'darkgrey';
+
+/* Challenge 1: Random RGB Colors:
+To createSketchFeature function: Add the following to the Mouseover function
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    elem.style.backgroundColor = `#${randomColor}`;
+
+*/
+
 
 
 
